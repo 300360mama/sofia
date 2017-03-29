@@ -1,0 +1,140 @@
+@font-face {
+    src: url("../fonts/ptsansbold.ttf");
+    font-family: ptsansbold;
+}
+
+@font-face {
+    src: url("../fonts/ptsansreg.ttf");
+    font-family: ptsansreg;
+}
+
+@font-face {
+    src: url("../fonts/lobsterreg.ttf");
+    font-family: lobsterreg;
+}
+
+/*header*/
+
+
+header h1{
+    font:78px lobsterreg;
+}
+header .container>.row:first-of-type section a i{
+    color: #7e7e7e;
+}
+header .nav li a{
+    color: #b1b1b1;
+    font:16px ptsansreg;
+}
+
+
+/*content maincontent*/
+
+.content{
+   font-family: ptsansreg;
+}
+.maincontent>h1, .maincontent figure h2, .maincontent figure h2,
+.maincontent figure figcaption span:first-of-type{
+    color: #000;
+
+}
+.maincontent>h1{
+    font-size:24px;
+}
+
+.maincontent figure h2{
+    font: 16px ptsansbold;
+}
+.maincontent figure figcaption span:first-of-type{
+    font:22px lobsterreg ;
+}
+.maincontent figure figcaption span:first-of-type+span{
+    font-size:14px;
+    color:#5f5f5f;
+}
+.maincontent figure figcaption a{
+    color: #fff;
+    font-size:14px;
+}
+
+.maincontent .nav li a{
+    color: #000;
+    font-size:16px;
+}
+
+/*aside*/
+
+aside .me h4{
+    font: 20px ptsansbold;
+    color: #000;
+}
+
+aside .me span{
+    color:#595959;
+    font: 14px ptsansreg;
+}
+
+aside .posts .nav li a{
+    color: #000;
+    font:16px ptsansbold;
+}
+aside .posts>section span:first-of-type{
+    color: #000;
+    font: 16px ptsansreg;
+}
+aside .posts>section span:first-of-type + span{
+    color: #b6b5b5;
+    font:14px ptsansreg;
+}
+aside .posts>section span:last-of-type{
+    color: #6b6b6b;
+    font:12px ptsansreg ;
+}
+
+.follow h4, .category h4,.flick h1{
+    color:#000;
+    font:16px ptsansbold;
+}
+
+.myfollow span{
+    color: #787878;
+    font:16px ptsansreg;
+}
+
+.category>section span{
+    color: #787878;
+    font:16px ptsansreg;
+}
+
+.subscribe h3{
+    color: #000;
+    font:24px ptsansbold;
+}
+
+.subscribe span{
+    color: #5f5f5f;
+    font: 16px ptsansreg;
+}
+
+.subscribe input:first-of-type{
+    color: #bfbfbf;
+    font: 16px ptsansreg;
+}
+.subscribe input:last-of-type{
+    font: 16px ptsansreg;
+    color: #fff;
+}
+
+/*footer*/
+
+footer .nav li a{
+    color: #878787;
+    font: 14px ptsansreg;
+}
+
+footer span{
+    color: #c2c2c2;
+    font:14px ptsansreg;
+
+}
+

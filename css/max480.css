@@ -1,0 +1,9 @@
+@media screen and (max-width: 480px){
+    header .nav{
+        display: none;
+    }
+
+    header .nav li a{
+        color: #00ff00;
+    }
+}

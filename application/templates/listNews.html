@@ -1,0 +1,26 @@
+<div class="maincontent col-md-8 col-xs-12">
+    <h1 class="col-xs-12 text-center">Popular Post</h1>
+
+    <?php
+
+    $downBorder=($page-1)*$quantityPage;
+    $topBorder=($page-1)*$quantityPage+$quantityPage-1;
+
+     for($i=$downBorder;$i<=$topBorder;$i++){
+
+        if(!isset($article[$i]))continue;
+       echo '<figure class="col-xs-12 ">
+               <img src="/ItHub/sofiaOrig/'.$article[$i]["imgpath"].' " alt="">
+               <figcaption class="col-xs-12 text-center">
+                 <h2 class="col-xs-12">Busines</h2>
+                 <span class="col-xs-12">'.$article[$i]["title"].'</span>
+                 <span class="col-xs-12">'.substr($article[$i]["content"],0,100).'...</span>
+                 <a href="/ItHub/sofiaOrig/news/article/'.$article[$i]["id"].'" class="col-xs-4 col-xs-offset-4">Читать больше...</a>
+               </figcaption>
+             </figure>';
+
+     }
+    $this->getPage($article,$page, $controller);
+    ?>
+
+</div>

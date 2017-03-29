@@ -1,0 +1,46 @@
+<ul class="mynav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+
+
+    <?php
+      $category=($controller=='blog')?"$category/":null;
+
+        if($page>1&&($page-1)>0){
+           echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.($page-1).'">Prev</a></li>';
+        }
+         if($page>3){
+           echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/1">1...</a></li>';
+
+         }
+
+        if(($page-2)>0){
+           echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.($page-2).'">'.($page-2).'</a></li>';
+        }
+
+        if(($page-1)>0){
+           echo '<li class="col-xs-3 page"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.($page-1).'">'.($page-1).'</a></li>';
+        }
+
+         echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.$page.'">'.$page.'</a></li>';
+
+        if(($page+1)<=$countPage){
+           echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.($page+1).'">'.($page+1).'</a></li>';
+        }
+
+        if(($page+2)<=$countPage){
+           echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.($page+2).'">'.($page+2).'</a></li>';
+        }
+        if($page<($countPage-3)&&($countPage-3)>0){
+          echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.$countPage.'">'.$countPage.'</a></li>';
+
+        }
+
+        if($page<$countPage){
+           echo '<li class="col-xs-3"><a href="/ItHub/sofiaOrig/'.$controller.'/index/'.$category.'page/'.($page+1).'">Next</a></li>';
+        }
+
+
+
+    ?>
+
+
+</ul>

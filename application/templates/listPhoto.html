@@ -1,0 +1,16 @@
+<div class="maincontent col-md-8 col-xs-12">
+    <h1 class="col-xs-12 text-center">Galerey Photo</h1>
+
+    <?php
+
+
+        if($data['album']){
+           foreach($data['listPhoto'] as $name){
+
+           echo '<img src="/ItHub/sofiaOrig/imgs/content/galerey/'.$data['album'].'/'.$name.'"/>';
+        }
+
+
+    }
+    ?>
+</div>

@@ -1,0 +1,86 @@
+<aside class="col-md-4 col-xs-12">
+    <div class="me col-xs-12 hidden-xs">
+        <div class="mebg col-xs-12 ">
+            <img class="center-block" src="/ItHub/sofiaOrig/imgs/aside1.png" alt="">
+            <h4 class="text-center col-xs-12">София </h4>
+            <span class="text-center col-sm-12" >Профессиональный
+                        рерайтер и просто хороший человек
+                    </span>
+        </div>
+    </div>
+    <div class="posts col-xs-12 hidden-xs">
+
+        <input  type="radio" name="tab" id="tab_1" checked>
+        <label for="tab_1" class="text-center col-xs-6">
+            Последние статьи
+        </label>
+        <input type="radio" name="tab" id="tab_2">
+        <label for="tab_2" class="text-center col-xs-6">
+            Последние новости
+        </label>
+
+        <article class="tab_1 col-xs-12">
+            <?php
+            $article=$data['blog'];
+
+            for($i=0;$i<count($article);$i++){
+              echo '<section class="col-xs-12">
+            <img class="col-xs-4" src="/ItHub/sofiaOrig/'.$article[$i]["imgpath"].'" alt="">
+            <section  class="col-xs-8">
+                <span class="text-left col-xs-12">'.$article[$i]["title"].'</span>
+                <span class="text-left col-xs-12">'.$article[$i]["date"].'</span>
+                <span class="text-left col-xs-12">'.substr($article[$i]["content"],0,50).'</span>
+            </section>
+            </section>';
+
+
+            }
+
+
+            ?>
+        </article>
+        <article class="tab_2 col-xs-12">
+
+            <?php
+            $article=$data['news'];
+
+            for($i=0;$i<count($article);$i++){
+              echo '<section class="col-xs-12">
+            <img class="col-xs-4" src="/ItHub/sofiaOrig/'.$article[$i]["imgpath"].'" alt="">
+            <section  class="col-xs-8">
+                <span class="text-left col-xs-12">'.$article[$i]["title"].'</span>
+                <span class="text-left col-xs-12">'.$article[$i]["date"].'</span>
+                <span class="text-left col-xs-12">'.substr($article[$i]["content"],0,50).'</span>
+            </section>
+            </section>';
+
+
+            }
+
+
+            ?>
+        </article>
+
+    </div>
+    <div class="galerey col-xs-12 hidden-xs">
+       <?php
+          $imgs=$this->getRandomImg('/ItHub/sofiaOrig/imgs/content/galerey');
+          if(!empty($imgs)){
+            foreach ($imgs as $album=>$name){
+              echo '<a href=""><img class="col-xs-12" src="/ItHub/sofiaOrig/imgs/content/galerey/'.$album.'/'.$name.'" alt=""/></a>';
+            }
+          }
+
+        ?>
+
+
+    </div>
+    <div class="subscribe col-xs-12 text-center">
+        <h3 class="col-lg-12 text-center">subscribe now</h3>
+        <span class="col-lg-12 text-center" >Lorem ipsum dolor sit amet, consectetur  adipiscing elit.</span>
+        <form class="col-lg-12" action="">
+            <input class="col-lg-10 col-lg-offset-1" type="text" placeholder="Введите свой емейл">
+            <input class="col-lg-8 col-lg-offset-2" type="button" value="subscribe Now">
+        </form>
+    </div>
+</aside>

@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+     header .nav>li{
+         padding: 0;
+     }
+    header .nav>li a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header .nav{
+        padding-right: 0;
+    }
+}
+

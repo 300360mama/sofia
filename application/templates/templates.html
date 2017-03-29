@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/ItHub/sofiaOrig/fontawesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/ItHub/sofiaOrig/css/fonts.css">
+	<link rel="stylesheet" href="/ItHub/sofiaOrig/css/bootstrap.css">
+	<link rel="stylesheet" href="/ItHub/sofiaOrig/css/max480.css">
+	<link rel="stylesheet" href="/ItHub/sofiaOrig/css/max768.css">
+	<link rel="stylesheet" type="text/css" href="/ItHub/sofiaOrig/css/style.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<section class=" col-md-2 col-sm-3 col-xs-12 text-center">
+					<a href="">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a href="">
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					</a>
+					<a href="">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<a href="">
+						<i  class="fa fa-vk" aria-hidden="true"></i>
+					</a>
+					<a href="">
+						<i>@</i>
+					</a>
+
+				</section >
+				<h1 class="logo col-sm-3 col-xs-12 col-md-offset-2 col-sm-offset-1 text-center">Sofia</h1>
+				<form action="" class="col-lg-3  col-lg-offset-2  col-md-3 col-sm-3 col-md-offset-2 col-sm-offset-2 hidden-xs">
+					<input type="search" placeholder="Введите значение для поиска">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<div class="row">
+				<ul class="col-xs-12 ">
+					<li class="  col-xs-3 text-center"><a href="/ItHub/sofiaOrig/index">О нас</a></li>
+					<li class="  col-xs-3 text-center"><a href="/ItHub/sofiaOrig/news/index">Новости</a></li>
+					<li class=" col-xs-3 text-center"><a href="/ItHub/sofiaOrig/galerey">Фотогалерея</a></li>
+					<li class=" col-xs-3 text-center"><a href="/ItHub/sofiaOrig/blog/index/all">Блог</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="banner">
+		<img src="/ItHub/sofiaOrig/imgs/bunnerBG.png" alt="">
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="row">
+
+					<?php
+						$this->view->getAllContent($Alldata);
+					?>
+
+			</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+			<!--	<ul class="col-xs-12">
+					<li class="col-xs-2 col-xs-offset-2">
+						<a href="" class="col-xs-12 text-center">Главная</a>
+					</li>
+					<li class="col-xs-2">
+						<a href="" class="col-xs-12 text-center">Контакты</a>
+					</li>
+					<li class="col-xs-2">
+						<a href="" class="col-xs-12 text-center">Напишите нам</a>
+					</li>
+					<li class="col-xs-2">
+						<a href="" class="col-xs-12 text-center">О нас</a>
+					</li>
+
+				</ul>-->
+				<span class="col-xs-12 text-center"> <time>2015</time> blogaris, All rights reserved.</span>
+			</div>
+
+
+
+		</div>
+	</footer>
+</div>
+</body>
+</html>
